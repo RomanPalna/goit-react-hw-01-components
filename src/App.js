@@ -10,6 +10,10 @@ import statistic from './statistical-data.json';
 import FriendsList from './components/Friends/FriendsList';
 import friends from './friends.json';
 
+//Transactions (task-4)
+import TransactionsList from './components/Transactions/TransactionsList';
+import transactions from './transactions.json';
+
 export default function App() {
   return (
     <div>
@@ -25,6 +29,7 @@ export default function App() {
       ;
       <StatsList items={statistic} />;
       <FriendsList items={friends} />
+      <TransactionsList transactions={transactions} />
     </div>
   );
 }
