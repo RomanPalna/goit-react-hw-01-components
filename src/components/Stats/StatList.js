@@ -7,9 +7,11 @@ function StatsList({ items }) {
       <h2 className="title">Upload stats</h2>
       <ul className="stat-list">
         {items.map(item => (
-          <li key={item.id}>
-            <Stats label={item.label} percentage={item.percentage} />
-          </li>
+          <Stats
+            key={item.id}
+            label={item.label}
+            percentage={item.percentage}
+          />
         ))}
       </ul>
     </section>
