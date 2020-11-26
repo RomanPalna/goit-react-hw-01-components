@@ -1,5 +1,9 @@
-import Profile from './components/Profile';
+//Profile (task-1)
+import Profile from './components/Profile/Profile';
 import profile from './user.json';
+//Statistic data (task-2)
+import StatsList from './components/Stats/StatList';
+import statistic from './statistical-data.json';
 
 export default function App() {
   return (
@@ -14,6 +18,7 @@ export default function App() {
         likes={profile.stats.likes}
       />
       ,
+      <StatsList items={statistic} />;
     </div>
   );
 }
