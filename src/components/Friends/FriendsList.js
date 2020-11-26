@@ -5,11 +5,13 @@ function FriendsList({ items }) {
   return (
     <ul className="friend-list">
       {items.map(friend => (
-        <Friends
-          avatar={friend.avatar}
-          name={friend.name}
-          isOnline={friend.isOnline}
-        />
+        <li key={friend.id}>
+          <Friends
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+          />
+        </li>
       ))}
     </ul>
   );
