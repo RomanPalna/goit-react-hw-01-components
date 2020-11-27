@@ -13,3 +13,7 @@
   border-radius: 3px;
   text-align: center;
 }
+
+.name {
+  font-weight: 700;
+}
