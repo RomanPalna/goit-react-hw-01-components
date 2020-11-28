@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-function Transactions(props) {
-  const { type, amount, currency, id } = props;
+function Transaction(props) {
+  const { type, amount, currency } = props;
   return (
-    <tr key={id}>
+    <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -11,9 +11,9 @@ function Transactions(props) {
   );
 }
 
-export default Transactions;
+export default Transaction;
 
-Transactions.propTypes = {
+Transaction.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
