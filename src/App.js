@@ -3,8 +3,8 @@ import Profile from './components/Profile/Profile';
 import profile from './user.json';
 
 //Statistic data (task-2)
-import StatsList from './components/Stats/StatList';
-import statistic from './statistical-data.json';
+import Statistics from './components/Stats/StatList';
+import statisticalData from './statistical-data.json';
 
 //FriendsList (task-3)
 import FriendsList from './components/Friends/FriendsList';
@@ -27,7 +27,7 @@ export default function App() {
         likes={profile.stats.likes}
       />
       ;
-      <StatsList items={statistic} />;
+      <Statistics title="Upload stats" items={statisticalData} />;
       <FriendsList items={friends} />
       <TransactionsList transactions={transactions} />
     </div>
