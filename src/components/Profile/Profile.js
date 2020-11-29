@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
 export default function Profile(props) {
-  const { name, tag, location, avatar, stats } = props;
+  const { name, tag, location, avatar } = props;
 
   return (
     <div className={s.profile}>
