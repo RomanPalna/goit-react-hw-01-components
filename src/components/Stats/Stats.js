@@ -7,7 +7,6 @@ function Statistic(props) {
   return (
     <li className={s.item} key={id} style={{ backgroundColor: rundomColor() }}>
       <span className={s.label}>{label}</span>
-      <span> </span>
       <span className={s.percentage}>{percentage}%</span>
     </li>
   );

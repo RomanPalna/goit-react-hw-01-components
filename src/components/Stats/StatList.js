@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Stats from './Stats';
 import s from './Stats.module.css';
 
-function Statistics({ items }) {
+function Statistic({ items }) {
   return (
     <section className={s.statistics}>
       <h2 className={s.title}>Upload stats</h2>
@@ -19,9 +19,9 @@ function Statistics({ items }) {
   );
 }
 
-export default Statistics;
+export default Statistic;
 
-Statistics.propTypes = {
+Statistic.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
