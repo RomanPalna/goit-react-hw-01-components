@@ -1,4 +1,4 @@
-import Transactions from './Transactions';
+import Transaction from './Transactions';
 import s from './Transactions.module.css';
 
 function TransactionsList({ transactions }) {
@@ -14,7 +14,7 @@ function TransactionsList({ transactions }) {
 
       <tbody>
         {transactions.map(transaction => (
-          <Transactions
+          <Transaction
             key={transaction.id}
             type={transaction.type}
             amount={transaction.amount}
